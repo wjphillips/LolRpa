@@ -3,6 +3,7 @@
   "description": "Trigger Based Attended Automation",
   "main": "Main.xaml",
   "dependencies": {
+    "ActivitiesChampRunepageMapping": "1.0.1",
     "UiPath.Excel.Activities": "[2.6.3]",
     "UiPath.Mail.Activities": "[1.6.0]",
     "UiPath.System.Activities": "[19.8.0]",
@@ -29,7 +30,8 @@
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
-    }
+    },
+    "fileInfos": []
   },
   "expressionLanguage": "VisualBasic"
 }
