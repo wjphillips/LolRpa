@@ -110,10 +110,10 @@
     {
       "Package": {
         "Id": "ActivitiesChampRunepageMapping",
-        "Version": "1.0.1"
+        "Version": "1.0.2"
       },
       "Assemblies": [
-        "C:\\Users\\Owner\\.nuget\\packages\\activitieschamprunepagemapping/1.0.1\\lib/LolChampionRunePageMap.dll"
+        "C:\\Users\\Owner\\.nuget\\packages\\activitieschamprunepagemapping/1.0.2\\lib/LolChampionRunePageMap.dll"
       ]
     }
   ],
@@ -121,7 +121,7 @@
   "ResolvedDependencies": {
     "ActivitiesChampRunepageMapping": {
       "Id": "ActivitiesChampRunepageMapping",
-      "Version": "1.0.1",
+      "Version": "1.0.2",
       "Dependencies": []
     },
     "AvalonEdit": {

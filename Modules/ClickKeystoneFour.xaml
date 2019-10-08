@@ -1,0 +1,142 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ClickKeystoneFour" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_KeystoneIndex" Type="InArgument(x:Int32)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>559,508</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ClickKeystoneFour_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ClickKeystoneFour" sap:VirtualizedContainerService.HintSize="539,448" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_KeystoneIndex]" sap:VirtualizedContainerService.HintSize="497,356" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+      <Switch.Default>
+        <Throw Exception="[New Exception(&quot;No value provided for keystone&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+      </Switch.Default>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image (second keystone)" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition OffsetX="-40" OffsetY="70" Position="TopRight" />
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAOCAYAAAB0DKHBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATDSURBVEhL3Zfbi1tVFMb7onNJcnI5uU9uM0k7mVuSyW0y6dwyY6cFH1SkCiKCSB+rUAsFn4RCqRbaSrFVaiuto7agqFQRfbBeKoXqg8/+M8vv28ed7Dmc0EHqgz585OzL2nut31577Zl9AZ8tAV8ECg/V+FhQRh/39zU2YkkwYItvPKTkZWNKzxsmrm+K62vp/Sg97rY351Omr6b0uN6TfSOP+frj/wgG23qMC5tzvWQ6vhfpoIfJy8YU5+wFil5P9/8nYehgtLzWoMy5pv9a7rH/BQz3uNd6eq4Zh1sGjGHaKwwvW+rRw3DPN8FQw+axT88x49HaZ/mjUo9l5Ie1demlC5INJuTzTldOluclbcVVQFU7KT9i/PJiQ96Friw2xfaHJYwi+tLUtPy+uSndZBYbhuWVUllutDuSD8ZU+2i+JJ9hvZvtJfl4qSMJ2DyZKcgOvq/Um/Kg11O/HHu+UOo7voA9aXMJe9GeKoXjaswPvYC5v2704HtaBRlA3+mFqpwqz6lv3f764IpcqNZhvyzb6byam4Nvl7Hn9VZbxf1MdnIAoxROwmhV2omsvF2py/HpOQmh38kaWyaDUbnTPSgVODMGoxhOmw5Z/ohEA1G52mzL2cqiJAMx+QgguskcnI5IIZSQr2DXgMOcf/zArGSsqAJJTYVicgfO1qIpCWPNWCCigs1jP8LpJDL94E9Mz8otBKTnLGPsj60t+X51TXJYk0GeAIhjxWn1rdtnKzX1HfGFlPj96oEZOVerSxD+N+Hb0XxRrdmH8R0W3VlaljdmK3B0AMINwxrFszrqpCBhWH5bOXYXhE/P15RCsCEMgmKWXMDGDJY2pkwYZv/TuSllEzJsitj725VVtRfb/P0EwL6EXzeQQYQ7DIYP3zGM6/7DyJD7vU1ZQTazra98H8a99Q2V7q14ZhcIDYPBEgjT6lCKJz+A4cd1OIPM+AlrLNhpjPH0HCUA5C049ABrb8EJHRw1DMbrOgijL47rxcw4POGsQRjvIdUrsKVPZzCfdm4Y93ENCexas9XPjHHUjEPwhTFdqjVUtrFfwdgfSck3uCbvN9oqQyaR3m4YOjNCyAxqQJRBh+WpXFFdERtwTBgco/PrAPgzYLXiE6pNDYPx4uR+rOWctu7L4p7fRuayRrCtYXBON5mR3wCbOlbyuCYInlebv7rA0veYZaMmNeQisnAXDNaMJdz1iyB1E0HFrJgnDBaayJjlFKmHwJixU3JqZl7deRbOWwjmCSM7hsEoo3jy1I78nQUUi+s7cDxq1AwNg+3XUFP+3N72hEEAflxtG/P4zbk8FPr/LK7khyikzBoFo4GrcRenxtdkAq/JbVX9O5JSr4ktc3Du3saGXEeqncfiOzg19mkYvCYvF8vyRXdFvUAaRgoF9VPca74EPNVzVRbZwZ/xhMCg11J8iQYwKF4pZilflGso0Kwhk4CnxwmKcNMonmyzJnGOhsE68eZ8VV3d89j3g0ZLTuJhIIznAPYX9F9FHwv8kYmCkxkBwCAQUzojtFh8rJHArjeZxg4MnszDtDvQf0v6RVK+oR1HTeM3AZgyfee3loLhBcSEwo24CCHwHxv3gm6nHr3ccN3yshnIBEGxzyn+zpVzFJK/AOB31lszMHx3AAAAAElFTkSuQmCC" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image (second keystone)" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition OffsetX="10" OffsetY="70" Position="TopRight" />
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAOCAYAAAB0DKHBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATDSURBVEhL3Zfbi1tVFMb7onNJcnI5uU9uM0k7mVuSyW0y6dwyY6cFH1SkCiKCSB+rUAsFn4RCqRbaSrFVaiuto7agqFQRfbBeKoXqg8/+M8vv28ed7Dmc0EHqgz585OzL2nut31577Zl9AZ8tAV8ECg/V+FhQRh/39zU2YkkwYItvPKTkZWNKzxsmrm+K62vp/Sg97rY351Omr6b0uN6TfSOP+frj/wgG23qMC5tzvWQ6vhfpoIfJy8YU5+wFil5P9/8nYehgtLzWoMy5pv9a7rH/BQz3uNd6eq4Zh1sGjGHaKwwvW+rRw3DPN8FQw+axT88x49HaZ/mjUo9l5Ie1demlC5INJuTzTldOluclbcVVQFU7KT9i/PJiQ96Friw2xfaHJYwi+tLUtPy+uSndZBYbhuWVUllutDuSD8ZU+2i+JJ9hvZvtJfl4qSMJ2DyZKcgOvq/Um/Kg11O/HHu+UOo7voA9aXMJe9GeKoXjaswPvYC5v2704HtaBRlA3+mFqpwqz6lv3f764IpcqNZhvyzb6byam4Nvl7Hn9VZbxf1MdnIAoxROwmhV2omsvF2py/HpOQmh38kaWyaDUbnTPSgVODMGoxhOmw5Z/ohEA1G52mzL2cqiJAMx+QgguskcnI5IIZSQr2DXgMOcf/zArGSsqAJJTYVicgfO1qIpCWPNWCCigs1jP8LpJDL94E9Mz8otBKTnLGPsj60t+X51TXJYk0GeAIhjxWn1rdtnKzX1HfGFlPj96oEZOVerSxD+N+Hb0XxRrdmH8R0W3VlaljdmK3B0AMINwxrFszrqpCBhWH5bOXYXhE/P15RCsCEMgmKWXMDGDJY2pkwYZv/TuSllEzJsitj725VVtRfb/P0EwL6EXzeQQYQ7DIYP3zGM6/7DyJD7vU1ZQTazra98H8a99Q2V7q14ZhcIDYPBEgjT6lCKJz+A4cd1OIPM+AlrLNhpjPH0HCUA5C049ABrb8EJHRw1DMbrOgijL47rxcw4POGsQRjvIdUrsKVPZzCfdm4Y93ENCexas9XPjHHUjEPwhTFdqjVUtrFfwdgfSck3uCbvN9oqQyaR3m4YOjNCyAxqQJRBh+WpXFFdERtwTBgco/PrAPgzYLXiE6pNDYPx4uR+rOWctu7L4p7fRuayRrCtYXBON5mR3wCbOlbyuCYInlebv7rA0veYZaMmNeQisnAXDNaMJdz1iyB1E0HFrJgnDBaayJjlFKmHwJixU3JqZl7deRbOWwjmCSM7hsEoo3jy1I78nQUUi+s7cDxq1AwNg+3XUFP+3N72hEEAflxtG/P4zbk8FPr/LK7khyikzBoFo4GrcRenxtdkAq/JbVX9O5JSr4ktc3Du3saGXEeqncfiOzg19mkYvCYvF8vyRXdFvUAaRgoF9VPca74EPNVzVRbZwZ/xhMCg11J8iQYwKF4pZilflGso0Kwhk4CnxwmKcNMonmyzJnGOhsE68eZ8VV3d89j3g0ZLTuJhIIznAPYX9F9FHwv8kYmCkxkBwCAQUzojtFh8rJHArjeZxg4MnszDtDvQf0v6RVK+oR1HTeM3AZgyfee3loLhBcSEwo24CCHwHxv3gm6nHr3ccN3yshnIBEGxzyn+zpVzFJK/AOB31lszMHx3AAAAAElFTkSuQmCC" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image (second keystone)" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition OffsetX="60" OffsetY="70" Position="TopRight" />
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAOCAYAAAB0DKHBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATDSURBVEhL3Zfbi1tVFMb7onNJcnI5uU9uM0k7mVuSyW0y6dwyY6cFH1SkCiKCSB+rUAsFn4RCqRbaSrFVaiuto7agqFQRfbBeKoXqg8/+M8vv28ed7Dmc0EHqgz585OzL2nut31577Zl9AZ8tAV8ECg/V+FhQRh/39zU2YkkwYItvPKTkZWNKzxsmrm+K62vp/Sg97rY351Omr6b0uN6TfSOP+frj/wgG23qMC5tzvWQ6vhfpoIfJy8YU5+wFil5P9/8nYehgtLzWoMy5pv9a7rH/BQz3uNd6eq4Zh1sGjGHaKwwvW+rRw3DPN8FQw+axT88x49HaZ/mjUo9l5Ie1demlC5INJuTzTldOluclbcVVQFU7KT9i/PJiQ96Friw2xfaHJYwi+tLUtPy+uSndZBYbhuWVUllutDuSD8ZU+2i+JJ9hvZvtJfl4qSMJ2DyZKcgOvq/Um/Kg11O/HHu+UOo7voA9aXMJe9GeKoXjaswPvYC5v2704HtaBRlA3+mFqpwqz6lv3f764IpcqNZhvyzb6byam4Nvl7Hn9VZbxf1MdnIAoxROwmhV2omsvF2py/HpOQmh38kaWyaDUbnTPSgVODMGoxhOmw5Z/ohEA1G52mzL2cqiJAMx+QgguskcnI5IIZSQr2DXgMOcf/zArGSsqAJJTYVicgfO1qIpCWPNWCCigs1jP8LpJDL94E9Mz8otBKTnLGPsj60t+X51TXJYk0GeAIhjxWn1rdtnKzX1HfGFlPj96oEZOVerSxD+N+Hb0XxRrdmH8R0W3VlaljdmK3B0AMINwxrFszrqpCBhWH5bOXYXhE/P15RCsCEMgmKWXMDGDJY2pkwYZv/TuSllEzJsitj725VVtRfb/P0EwL6EXzeQQYQ7DIYP3zGM6/7DyJD7vU1ZQTazra98H8a99Q2V7q14ZhcIDYPBEgjT6lCKJz+A4cd1OIPM+AlrLNhpjPH0HCUA5C049ABrb8EJHRw1DMbrOgijL47rxcw4POGsQRjvIdUrsKVPZzCfdm4Y93ENCexas9XPjHHUjEPwhTFdqjVUtrFfwdgfSck3uCbvN9oqQyaR3m4YOjNCyAxqQJRBh+WpXFFdERtwTBgco/PrAPgzYLXiE6pNDYPx4uR+rOWctu7L4p7fRuayRrCtYXBON5mR3wCbOlbyuCYInlebv7rA0veYZaMmNeQisnAXDNaMJdz1iyB1E0HFrJgnDBaayJjlFKmHwJixU3JqZl7deRbOWwjmCSM7hsEoo3jy1I78nQUUi+s7cDxq1AwNg+3XUFP+3N72hEEAflxtG/P4zbk8FPr/LK7khyikzBoFo4GrcRenxtdkAq/JbVX9O5JSr4ktc3Du3saGXEeqncfiOzg19mkYvCYvF8vyRXdFvUAaRgoF9VPca74EPNVzVRbZwZ/xhMCg11J8iQYwKF4pZilflGso0Kwhk4CnxwmKcNMonmyzJnGOhsE68eZ8VV3d89j3g0ZLTuJhIIznAPYX9F9FHwv8kYmCkxkBwCAQUzojtFh8rJHArjeZxg4MnszDtDvQf0v6RVK+oR1HTeM3AZgyfee3loLhBcSEwo24CCHwHxv3gm6nHr3ccN3yshnIBEGxzyn+zpVzFJK/AOB31lszMHx3AAAAAElFTkSuQmCC" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="4" ClickType="CLICK_SINGLE" DisplayName="Click Image (second keystone)" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition OffsetX="110" OffsetY="70" Position="TopRight" />
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAOCAYAAAB0DKHBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATDSURBVEhL3Zfbi1tVFMb7onNJcnI5uU9uM0k7mVuSyW0y6dwyY6cFH1SkCiKCSB+rUAsFn4RCqRbaSrFVaiuto7agqFQRfbBeKoXqg8/+M8vv28ed7Dmc0EHqgz585OzL2nut31577Zl9AZ8tAV8ECg/V+FhQRh/39zU2YkkwYItvPKTkZWNKzxsmrm+K62vp/Sg97rY351Omr6b0uN6TfSOP+frj/wgG23qMC5tzvWQ6vhfpoIfJy8YU5+wFil5P9/8nYehgtLzWoMy5pv9a7rH/BQz3uNd6eq4Zh1sGjGHaKwwvW+rRw3DPN8FQw+axT88x49HaZ/mjUo9l5Ie1demlC5INJuTzTldOluclbcVVQFU7KT9i/PJiQ96Friw2xfaHJYwi+tLUtPy+uSndZBYbhuWVUllutDuSD8ZU+2i+JJ9hvZvtJfl4qSMJ2DyZKcgOvq/Um/Kg11O/HHu+UOo7voA9aXMJe9GeKoXjaswPvYC5v2704HtaBRlA3+mFqpwqz6lv3f764IpcqNZhvyzb6byam4Nvl7Hn9VZbxf1MdnIAoxROwmhV2omsvF2py/HpOQmh38kaWyaDUbnTPSgVODMGoxhOmw5Z/ohEA1G52mzL2cqiJAMx+QgguskcnI5IIZSQr2DXgMOcf/zArGSsqAJJTYVicgfO1qIpCWPNWCCigs1jP8LpJDL94E9Mz8otBKTnLGPsj60t+X51TXJYk0GeAIhjxWn1rdtnKzX1HfGFlPj96oEZOVerSxD+N+Hb0XxRrdmH8R0W3VlaljdmK3B0AMINwxrFszrqpCBhWH5bOXYXhE/P15RCsCEMgmKWXMDGDJY2pkwYZv/TuSllEzJsitj725VVtRfb/P0EwL6EXzeQQYQ7DIYP3zGM6/7DyJD7vU1ZQTazra98H8a99Q2V7q14ZhcIDYPBEgjT6lCKJz+A4cd1OIPM+AlrLNhpjPH0HCUA5C049ABrb8EJHRw1DMbrOgijL47rxcw4POGsQRjvIdUrsKVPZzCfdm4Y93ENCexas9XPjHHUjEPwhTFdqjVUtrFfwdgfSck3uCbvN9oqQyaR3m4YOjNCyAxqQJRBh+WpXFFdERtwTBgco/PrAPgzYLXiE6pNDYPx4uR+rOWctu7L4p7fRuayRrCtYXBON5mR3wCbOlbyuCYInlebv7rA0veYZaMmNeQisnAXDNaMJdz1iyB1E0HFrJgnDBaayJjlFKmHwJixU3JqZl7deRbOWwjmCSM7hsEoo3jy1I78nQUUi+s7cDxq1AwNg+3XUFP+3N72hEEAflxtG/P4zbk8FPr/LK7khyikzBoFo4GrcRenxtdkAq/JbVX9O5JSr4ktc3Du3saGXEeqncfiOzg19mkYvCYvF8vyRXdFvUAaRgoF9VPca74EPNVzVRbZwZ/xhMCg11J8iQYwKF4pZilflGso0Kwhk4CnxwmKcNMonmyzJnGOhsE68eZ8VV3d89j3g0ZLTuJhIIznAPYX9F9FHwv8kYmCkxkBwCAQUzojtFh8rJHArjeZxg4MnszDtDvQf0v6RVK+oR1HTeM3AZgyfee3loLhBcSEwo24CCHwHxv3gm6nHr3ccN3yshnIBEGxzyn+zpVzFJK/AOB31lszMHx3AAAAAElFTkSuQmCC" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+    </Switch>
+  </Sequence>
+</Activity>

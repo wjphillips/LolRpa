@@ -1,0 +1,360 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SelectMainRunes" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:l="clr-namespace:LolChampionRunePageMap;assembly=LolChampionRunePageMap" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_RuneData" Type="InArgument(l:ChampRuneDataset)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1101,1521</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>SelectMainRunes_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>LolChampionRunePageMap</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>LolChampionRunePageMap</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SelectMainRunes" sap:VirtualizedContainerService.HintSize="1081,1461" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="s:String[]" Default="[{&quot;PRECISION&quot;, &quot;DOMINATION&quot;}]" Name="treesWithFourKeystones" />
+      <Variable x:TypeArguments="s:String[]" Default="[{&quot;DOMINATION&quot;}]" Name="treesWithExtraRowThreeRune" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <If Condition="[treesWithFourKeystones.Contains(in_RuneData.primaryTree)]" DisplayName="If main tree has 4 keystones, invoke appropriately" sap:VirtualizedContainerService.HintSize="1039,235" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ClickKeystoneFour workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Modules/ClickKeystoneFour.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <InArgument x:TypeArguments="x:Int32" x:Key="in_KeystoneIndex">[in_RuneData.primaryArray(0)]</InArgument>
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+      </If.Then>
+      <If.Else>
+        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ClickKeystoneThree workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Modules/ClickKeystoneThree.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <InArgument x:TypeArguments="x:Int32" x:Key="in_KeystoneIndex">[in_RuneData.primaryArray(0)]</InArgument>
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+      </If.Else>
+    </If>
+    <ui:HoverImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" KeyModifiers="{x:Null}" SendWindowMessages="{x:Null}" DisplayName="Hover Image (to get rid of tooltip)" sap:VirtualizedContainerService.HintSize="1039,106" sap2010:WorkflowViewState.IdRef="HoverImage_1">
+      <ui:HoverImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:HoverImage.CursorPosition>
+      <ui:HoverImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAkCAYAAAAHKVPcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATnSURBVFhH3ZbbUxNnGIf9I1q12ARyIJs9JNmcCAkEBQqCKYcaQIIc2loRAg6nFpBWlBkjIxYGmNYBW6ziBRfUwbEy44zaaS86w03/pl+/d8Mmm2RJBPGmF89s3m/f7/09ye4mOeE28chGLrHnxWXkDkexjVGq4GQ4iJI0TMLOgjORS7i86AblI0tCMlogFZv3sZAEx4IzkUtseaDBbKhemC4kkC2hCiQ5ggSR+clkkwzVkhQ4Zon8aEOz+f9IdFSXITHUiM1EO3Yf9GBv66rC9mJMWaNzn5e7dQWI95IYbA1gd6UZe5tRRlvB4+5KEwZayo5HoqlcxPadCuxtVGPv12q8WApjdjCAhjo3qsIyjHaHQlWVrKzRuReL4VT/dqICNS723XJUiY4qEa+Xg/hnvRI7C+XovuhJhRaCencW2N61CrxeCaG3Tjy8RHtYwF8/h/A3Y3HcD7tTPywftIf2qnOilcK7S0T8PP5YCODtahC34z7dgMMwx2a8YbNesplnJRtEgwmicR/2Wlfi0Q0fXi2VY/ZaWoCTPbC7vQqCx4d7dwbx6lkiBdW0rvZQv1Zk/npy5gabXVDiSqOEl/cDeDzrB6e5BD8tjuLJ+nSKt8/n8e+fKymo1p6nfq0EzaKZNLuvns8v8XjGh535MrRF0nc+8SYrtBDUr91PRNnM52z2oxnvwRKtIYE9jn6sT3tzBsTjnRgb6UkxPtqdt6b+7BnEGpv9O8uodZfqS0x0OLB124d4zKU74DiIx2SW4cVYu6gvcbdfxtObXvYllLu51Cnju4k+LC+MoLOrWVkbuHZJqelINa1TTX3Ur92vQrMpI3HVqS+xfN2F32Y8cHhyN9PdvsluOLre3473KmtL88NKTUeqaZ1q6st+OlTKAg729Llxb4BJMAHRwL4nPGb6S5eU+GXSjYeT+u+Ahj5Zm1JCJsaSEj/uS9CRalqnmvoOkiDUHBLIkXgw7sKDiQ8voeaIBotChsRddp1WR5yQZCln43FJeH0Sy3DhVh+7MfUkJjtFLA07ESz/cBLBoITFIYeSlZKgcPVX80qDwG4YCV2RQhI9ytr9xJBS05FqWi8k0RURsTDgwJfnOX2JOreNPToiprqFnM1aifXVCQzHY9ja+F6p6Ug1rReSmOoRkPhGRKVo1ZcgpmI85r4WURMWMzaXOt1YW06GFIL6qF+7n6gJS5j7SsBkF/vt2BfQlWgKcPihh8foJTssQvqyFPNOtFxswLOntzJ+PbOh89RH/VoBmjXSYcfNXh6NfvaVnZKw4gQFq3+9VOKtHKa77Oi+wGcMeh8uN/K4cdmOwWa6F+hSpNGV8FstGPrCipGoFa21dt2hh6G1hsNIG705C7wWCqZPIo2uhMNoRQVvQX+zCf1NJrRUW2Hmc5+YQtCelnPW1ByfzQqBhRLvJEEEOTNinxnQXW9AtNYIn9emG6YH9UZrjOg+b0BnrQFB0QzeWAr+sBKEz2pCJHgG0XOfMIoQCRehwm+C4OTASelLRa9pjc5Fwpr+UBGc5n2Bo0oQdBcHOCPqyk7iQugkGoMfFzzWl52C325gwRaGNb9EtsBBEiqyuRgh6QzOyqdR7TmF+sBHCvS6yn0aQXbOyXqS4SrHLEFIbE1FJIozyRTYl2CPIiEo6Ehkh0qfsiCVLAE9hEPBRBVUiVL8B7ck30el2HArAAAAAElFTkSuQmCC" />
+      </ui:HoverImage.Image>
+      <ui:HoverImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:HoverImage.Target>
+    </ui:HoverImage>
+    <Switch x:TypeArguments="x:Int32" DisplayName="Switch (Select row 1 main rune)" Expression="[in_RuneData.primaryArray(1)]" sap:VirtualizedContainerService.HintSize="1039,334" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 1 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition OffsetX="30" OffsetY="160" Position="BottomLeft" />
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 1 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition OffsetX="98" OffsetY="160" Position="BottomLeft" />
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 1 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition OffsetX="165" OffsetY="160" Position="BottomLeft" />
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+    </Switch>
+    <Switch x:TypeArguments="x:Int32" DisplayName="Switch (Select row 2 main rune)" Expression="[in_RuneData.primaryArray(2)]" sap:VirtualizedContainerService.HintSize="1039,182" sap2010:WorkflowViewState.IdRef="Switch`1_5">
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition OffsetX="30" OffsetY="245" Position="BottomLeft" />
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition OffsetX="98" OffsetY="245" Position="BottomLeft" />
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition OffsetX="165" OffsetY="245" Position="BottomLeft" />
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+    </Switch>
+    <If Condition="[treesWithExtraRowThreeRune.Contains(in_RuneData.primaryTree)]" DisplayName="If (Select row 3 main rune)" sap:VirtualizedContainerService.HintSize="1039,352" sap2010:WorkflowViewState.IdRef="If_2">
+      <If.Then>
+        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_RuneData.primaryArray(3)]" sap:VirtualizedContainerService.HintSize="497,204" sap2010:WorkflowViewState.IdRef="Switch`1_7">
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition OffsetX="25" OffsetY="330" Position="BottomLeft" />
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition OffsetX="75" OffsetY="330" Position="BottomLeft" />
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition OffsetX="125" OffsetY="330" Position="BottomLeft" />
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="4" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_14" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition OffsetX="175" OffsetY="330" Position="BottomLeft" />
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+        </Switch>
+      </If.Then>
+      <If.Else>
+        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_RuneData.primaryArray(3)]" sap:VirtualizedContainerService.HintSize="497,182" sap2010:WorkflowViewState.IdRef="Switch`1_6">
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition OffsetX="30" OffsetY="330" Position="BottomLeft" />
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition OffsetX="98" OffsetY="330" Position="BottomLeft" />
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition OffsetX="165" OffsetY="330" Position="BottomLeft" />
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+        </Switch>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.1": {
-      "ActivitiesChampRunepageMapping/1.0.1": {
+      "ActivitiesChampRunepageMapping/1.0.2": {
         "type": "package",
         "compile": {
           "lib/_._": {}
@@ -609,13 +609,13 @@
     }
   },
   "libraries": {
-    "ActivitiesChampRunepageMapping/1.0.1": {
-      "sha512": "kwbxc9IjVggpxoUwOG3uDVta95rpEL/WRK5DDn5Dn3WIwQDff05mU9KxGmczA0IMS9iDM49PWHQzKBOXSuSKEQ==",
+    "ActivitiesChampRunepageMapping/1.0.2": {
+      "sha512": "HUwkox9OWWWyMMZpN4fHJhCGIP4ergP62u2LnzmslyJ1ifBieDOye28mq4ocMiGg1pH7pMghOm0IX3uzuMDP0w==",
       "type": "package",
-      "path": "activitieschamprunepagemapping/1.0.1",
+      "path": "activitieschamprunepagemapping/1.0.2",
       "files": [
         ".nupkg.metadata",
-        "activitieschamprunepagemapping.1.0.1.nupkg.sha512",
+        "activitieschamprunepagemapping.1.0.2.nupkg.sha512",
         "activitieschamprunepagemapping.nuspec",
         "lib/LolChampionRunePageMap.dll"
       ]
@@ -1309,7 +1309,7 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
-      "ActivitiesChampRunepageMapping >= 1.0.1 <= 1.0.1",
+      "ActivitiesChampRunepageMapping >= 1.0.2 <= 1.0.2",
       "UiPath.Excel.Activities >= 2.6.3 <= 2.6.3",
       "UiPath.Mail.Activities >= 1.6.0 <= 1.6.0",
       "UiPath.System.Activities >= 19.8.0 <= 19.8.0",
@@ -1333,7 +1333,7 @@
           "ActivitiesChampRunepageMapping": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.0.1, 1.0.1]"
+            "version": "[1.0.2, 1.0.2]"
           },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
