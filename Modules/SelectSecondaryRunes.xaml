@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1101,948</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1101,1444</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Select Secondary Runes_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -57,7 +57,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Select Secondary Runes" sap:VirtualizedContainerService.HintSize="1081,888" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Select Secondary Runes" sap:VirtualizedContainerService.HintSize="1081,1344" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Default="[{&quot;PRECISION&quot;, &quot;DOMINATION&quot;}]" Name="treesWithFourKeystones" />
       <Variable x:TypeArguments="s:String[]" Default="[{&quot;DOMINATION&quot;}]" Name="treesWithExtraRowThreeRune" />
@@ -67,8 +67,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Switch x:TypeArguments="x:Int32" DisplayName="Switch (Select row 1 secondary rune)" Expression="[in_RuneData.secondaryArray(0)]" sap:VirtualizedContainerService.HintSize="1039,182" sap2010:WorkflowViewState.IdRef="Switch`1_1">
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 1 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+    <Switch x:TypeArguments="x:Int32" DisplayName="Switch (Select row 1 secondary rune)" Expression="[in_RuneData.secondaryArray(0)]" sap:VirtualizedContainerService.HintSize="1039,334" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 1 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="355" OffsetY="30" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -86,7 +86,7 @@
           </ui:Target>
         </ui:ClickImage.Target>
       </ui:ClickImage>
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 1 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 1 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="423" OffsetY="30" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -104,7 +104,7 @@
           </ui:Target>
         </ui:ClickImage.Target>
       </ui:ClickImage>
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 1 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 1 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="491" OffsetY="30" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -123,8 +123,8 @@
         </ui:ClickImage.Target>
       </ui:ClickImage>
     </Switch>
-    <Switch x:TypeArguments="x:Int32" DisplayName="Switch (Select row 2 secondary rune)" Expression="[in_RuneData.secondaryArray(1)]" sap:VirtualizedContainerService.HintSize="1039,182" sap2010:WorkflowViewState.IdRef="Switch`1_2">
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+    <Switch x:TypeArguments="x:Int32" DisplayName="Switch (Select row 2 secondary rune)" Expression="[in_RuneData.secondaryArray(1)]" sap:VirtualizedContainerService.HintSize="1039,334" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 2 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="355" OffsetY="155" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -142,7 +142,7 @@
           </ui:Target>
         </ui:ClickImage.Target>
       </ui:ClickImage>
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 2 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="423" OffsetY="115" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -160,7 +160,7 @@
           </ui:Target>
         </ui:ClickImage.Target>
       </ui:ClickImage>
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 2 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="491" OffsetY="115" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -179,10 +179,10 @@
         </ui:ClickImage.Target>
       </ui:ClickImage>
     </Switch>
-    <If Condition="[treesWithExtraRowThreeRune.Contains(in_RuneData.secondaryTree)]" DisplayName="If (Select row 3 secondary rune)" sap:VirtualizedContainerService.HintSize="1039,352" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[treesWithExtraRowThreeRune.Contains(in_RuneData.secondaryTree)]" DisplayName="If (Select row 3 secondary rune)" sap:VirtualizedContainerService.HintSize="1039,504" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_RuneData.secondaryArray(2)]" sap:VirtualizedContainerService.HintSize="497,204" sap2010:WorkflowViewState.IdRef="Switch`1_3">
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_RuneData.secondaryArray(2)]" sap:VirtualizedContainerService.HintSize="497,356" sap2010:WorkflowViewState.IdRef="Switch`1_3">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="350" OffsetY="200" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -200,7 +200,7 @@
               </ui:Target>
             </ui:ClickImage.Target>
           </ui:ClickImage>
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row  pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row  pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="400" OffsetY="200" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -218,7 +218,7 @@
               </ui:Target>
             </ui:ClickImage.Target>
           </ui:ClickImage>
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="450" OffsetY="200" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -236,7 +236,7 @@
               </ui:Target>
             </ui:ClickImage.Target>
           </ui:ClickImage>
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="4" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 4" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="4" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 4" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="500" OffsetY="200" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -257,8 +257,8 @@
         </Switch>
       </If.Then>
       <If.Else>
-        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_RuneData.secondaryArray(2)]" sap:VirtualizedContainerService.HintSize="497,182" sap2010:WorkflowViewState.IdRef="Switch`1_4">
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_RuneData.secondaryArray(2)]" sap:VirtualizedContainerService.HintSize="497,334" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="355" OffsetY="200" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -276,7 +276,7 @@
               </ui:Target>
             </ui:ClickImage.Target>
           </ui:ClickImage>
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="423" OffsetY="200" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -294,7 +294,7 @@
               </ui:Target>
             </ui:ClickImage.Target>
           </ui:ClickImage>
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="491" OffsetY="200" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>

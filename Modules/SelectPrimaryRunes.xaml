@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1101,1661</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1101,2157</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SelectMainRunes_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -57,7 +57,7 @@
       <AssemblyReference>LolChampionRunePageMap</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SelectMainRunes" sap:VirtualizedContainerService.HintSize="1081,1601" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SelectMainRunes" sap:VirtualizedContainerService.HintSize="1081,2057" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Default="[{&quot;PRECISION&quot;, &quot;DOMINATION&quot;}]" Name="treesWithFourKeystones" />
       <Variable x:TypeArguments="s:String[]" Default="[{&quot;DOMINATION&quot;}]" Name="treesWithExtraRowThreeRune" />
@@ -83,7 +83,7 @@
         </ui:InvokeWorkflowFile>
       </If.Else>
     </If>
-    <ui:HoverImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" KeyModifiers="{x:Null}" SendWindowMessages="{x:Null}" DisplayName="Hover trash can (to get rid of tooltip)" sap:VirtualizedContainerService.HintSize="1039,106" sap2010:WorkflowViewState.IdRef="HoverImage_1">
+    <ui:HoverImage ContinueOnError="{x:Null}" KeyModifiers="{x:Null}" SendWindowMessages="{x:Null}" DelayBefore="5" DelayMS="5" DisplayName="Hover trash can (to get rid of tooltip)" sap:VirtualizedContainerService.HintSize="1039,106" sap2010:WorkflowViewState.IdRef="HoverImage_1">
       <ui:HoverImage.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -98,18 +98,15 @@
         <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAkCAYAAAAHKVPcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATnSURBVFhH3ZbbUxNnGIf9I1q12ARyIJs9JNmcCAkEBQqCKYcaQIIc2loRAg6nFpBWlBkjIxYGmNYBW6ziBRfUwbEy44zaaS86w03/pl+/d8Mmm2RJBPGmF89s3m/f7/09ye4mOeE28chGLrHnxWXkDkexjVGq4GQ4iJI0TMLOgjORS7i86AblI0tCMlogFZv3sZAEx4IzkUtseaDBbKhemC4kkC2hCiQ5ggSR+clkkwzVkhQ4Zon8aEOz+f9IdFSXITHUiM1EO3Yf9GBv66rC9mJMWaNzn5e7dQWI95IYbA1gd6UZe5tRRlvB4+5KEwZayo5HoqlcxPadCuxtVGPv12q8WApjdjCAhjo3qsIyjHaHQlWVrKzRuReL4VT/dqICNS723XJUiY4qEa+Xg/hnvRI7C+XovuhJhRaCencW2N61CrxeCaG3Tjy8RHtYwF8/h/A3Y3HcD7tTPywftIf2qnOilcK7S0T8PP5YCODtahC34z7dgMMwx2a8YbNesplnJRtEgwmicR/2Wlfi0Q0fXi2VY/ZaWoCTPbC7vQqCx4d7dwbx6lkiBdW0rvZQv1Zk/npy5gabXVDiSqOEl/cDeDzrB6e5BD8tjuLJ+nSKt8/n8e+fKymo1p6nfq0EzaKZNLuvns8v8XjGh535MrRF0nc+8SYrtBDUr91PRNnM52z2oxnvwRKtIYE9jn6sT3tzBsTjnRgb6UkxPtqdt6b+7BnEGpv9O8uodZfqS0x0OLB124d4zKU74DiIx2SW4cVYu6gvcbdfxtObXvYllLu51Cnju4k+LC+MoLOrWVkbuHZJqelINa1TTX3Ur92vQrMpI3HVqS+xfN2F32Y8cHhyN9PdvsluOLre3473KmtL88NKTUeqaZ1q6st+OlTKAg729Llxb4BJMAHRwL4nPGb6S5eU+GXSjYeT+u+Ahj5Zm1JCJsaSEj/uS9CRalqnmvoOkiDUHBLIkXgw7sKDiQ8voeaIBotChsRddp1WR5yQZCln43FJeH0Sy3DhVh+7MfUkJjtFLA07ESz/cBLBoITFIYeSlZKgcPVX80qDwG4YCV2RQhI9ytr9xJBS05FqWi8k0RURsTDgwJfnOX2JOreNPToiprqFnM1aifXVCQzHY9ja+F6p6Ug1rReSmOoRkPhGRKVo1ZcgpmI85r4WURMWMzaXOt1YW06GFIL6qF+7n6gJS5j7SsBkF/vt2BfQlWgKcPihh8foJTssQvqyFPNOtFxswLOntzJ+PbOh89RH/VoBmjXSYcfNXh6NfvaVnZKw4gQFq3+9VOKtHKa77Oi+wGcMeh8uN/K4cdmOwWa6F+hSpNGV8FstGPrCipGoFa21dt2hh6G1hsNIG705C7wWCqZPIo2uhMNoRQVvQX+zCf1NJrRUW2Hmc5+YQtCelnPW1ByfzQqBhRLvJEEEOTNinxnQXW9AtNYIn9emG6YH9UZrjOg+b0BnrQFB0QzeWAr+sBKEz2pCJHgG0XOfMIoQCRehwm+C4OTASelLRa9pjc5Fwpr+UBGc5n2Bo0oQdBcHOCPqyk7iQugkGoMfFzzWl52C325gwRaGNb9EtsBBEiqyuRgh6QzOyqdR7TmF+sBHCvS6yn0aQXbOyXqS4SrHLEFIbE1FJIozyRTYl2CPIiEo6Ehkh0qfsiCVLAE9hEPBRBVUiVL8B7ck30el2HArAAAAAElFTkSuQmCC" />
       </ui:HoverImage.Image>
       <ui:HoverImage.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;" TimeoutMS="5">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>
         </ui:Target>
       </ui:HoverImage.Target>
     </ui:HoverImage>
-    <Switch x:TypeArguments="x:Int32" DisplayName="Switch (Select row 1 main rune)" Expression="[in_RuneData.primaryArray(1)]" sap:VirtualizedContainerService.HintSize="1039,182" sap2010:WorkflowViewState.IdRef="Switch`1_4">
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 1 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+    <Switch x:TypeArguments="x:Int32" DisplayName="Switch (Select row 1 main rune)" Expression="[in_RuneData.primaryArray(1)]" sap:VirtualizedContainerService.HintSize="1039,334" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 1 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="30" OffsetY="160" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -127,7 +124,7 @@
           </ui:Target>
         </ui:ClickImage.Target>
       </ui:ClickImage>
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 1 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 1 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="98" OffsetY="160" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -145,7 +142,7 @@
           </ui:Target>
         </ui:ClickImage.Target>
       </ui:ClickImage>
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 1 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 1 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="165" OffsetY="160" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -164,7 +161,7 @@
         </ui:ClickImage.Target>
       </ui:ClickImage>
     </Switch>
-    <ui:HoverImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" KeyModifiers="{x:Null}" SendWindowMessages="{x:Null}" DisplayName="Hover trash can (to get rid of tooltip)" sap:VirtualizedContainerService.HintSize="1039,106" sap2010:WorkflowViewState.IdRef="HoverImage_2">
+    <ui:HoverImage ContinueOnError="{x:Null}" KeyModifiers="{x:Null}" SendWindowMessages="{x:Null}" DelayBefore="5" DelayMS="5" DisplayName="Hover trash can (to get rid of tooltip)" sap:VirtualizedContainerService.HintSize="1039,106" sap2010:WorkflowViewState.IdRef="HoverImage_2">
       <ui:HoverImage.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -179,18 +176,15 @@
         <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAkCAYAAAAHKVPcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATnSURBVFhH3ZbbUxNnGIf9I1q12ARyIJs9JNmcCAkEBQqCKYcaQIIc2loRAg6nFpBWlBkjIxYGmNYBW6ziBRfUwbEy44zaaS86w03/pl+/d8Mmm2RJBPGmF89s3m/f7/09ye4mOeE28chGLrHnxWXkDkexjVGq4GQ4iJI0TMLOgjORS7i86AblI0tCMlogFZv3sZAEx4IzkUtseaDBbKhemC4kkC2hCiQ5ggSR+clkkwzVkhQ4Zon8aEOz+f9IdFSXITHUiM1EO3Yf9GBv66rC9mJMWaNzn5e7dQWI95IYbA1gd6UZe5tRRlvB4+5KEwZayo5HoqlcxPadCuxtVGPv12q8WApjdjCAhjo3qsIyjHaHQlWVrKzRuReL4VT/dqICNS723XJUiY4qEa+Xg/hnvRI7C+XovuhJhRaCencW2N61CrxeCaG3Tjy8RHtYwF8/h/A3Y3HcD7tTPywftIf2qnOilcK7S0T8PP5YCODtahC34z7dgMMwx2a8YbNesplnJRtEgwmicR/2Wlfi0Q0fXi2VY/ZaWoCTPbC7vQqCx4d7dwbx6lkiBdW0rvZQv1Zk/npy5gabXVDiSqOEl/cDeDzrB6e5BD8tjuLJ+nSKt8/n8e+fKymo1p6nfq0EzaKZNLuvns8v8XjGh535MrRF0nc+8SYrtBDUr91PRNnM52z2oxnvwRKtIYE9jn6sT3tzBsTjnRgb6UkxPtqdt6b+7BnEGpv9O8uodZfqS0x0OLB124d4zKU74DiIx2SW4cVYu6gvcbdfxtObXvYllLu51Cnju4k+LC+MoLOrWVkbuHZJqelINa1TTX3Ur92vQrMpI3HVqS+xfN2F32Y8cHhyN9PdvsluOLre3473KmtL88NKTUeqaZ1q6st+OlTKAg729Llxb4BJMAHRwL4nPGb6S5eU+GXSjYeT+u+Ahj5Zm1JCJsaSEj/uS9CRalqnmvoOkiDUHBLIkXgw7sKDiQ8voeaIBotChsRddp1WR5yQZCln43FJeH0Sy3DhVh+7MfUkJjtFLA07ESz/cBLBoITFIYeSlZKgcPVX80qDwG4YCV2RQhI9ytr9xJBS05FqWi8k0RURsTDgwJfnOX2JOreNPToiprqFnM1aifXVCQzHY9ja+F6p6Ug1rReSmOoRkPhGRKVo1ZcgpmI85r4WURMWMzaXOt1YW06GFIL6qF+7n6gJS5j7SsBkF/vt2BfQlWgKcPihh8foJTssQvqyFPNOtFxswLOntzJ+PbOh89RH/VoBmjXSYcfNXh6NfvaVnZKw4gQFq3+9VOKtHKa77Oi+wGcMeh8uN/K4cdmOwWa6F+hSpNGV8FstGPrCipGoFa21dt2hh6G1hsNIG705C7wWCqZPIo2uhMNoRQVvQX+zCf1NJrRUW2Hmc5+YQtCelnPW1ByfzQqBhRLvJEEEOTNinxnQXW9AtNYIn9emG6YH9UZrjOg+b0BnrQFB0QzeWAr+sBKEz2pCJHgG0XOfMIoQCRehwm+C4OTASelLRa9pjc5Fwpr+UBGc5n2Bo0oQdBcHOCPqyk7iQugkGoMfFzzWl52C325gwRaGNb9EtsBBEiqyuRgh6QzOyqdR7TmF+sBHCvS6yn0aQXbOyXqS4SrHLEFIbE1FJIozyRTYl2CPIiEo6Ehkh0qfsiCVLAE9hEPBRBVUiVL8B7ck30el2HArAAAAAElFTkSuQmCC" />
       </ui:HoverImage.Image>
       <ui:HoverImage.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;" TimeoutMS="5">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>
         </ui:Target>
       </ui:HoverImage.Target>
     </ui:HoverImage>
-    <Switch x:TypeArguments="x:Int32" DisplayName="Switch (Select row 2 main rune)" Expression="[in_RuneData.primaryArray(2)]" sap:VirtualizedContainerService.HintSize="1039,182" sap2010:WorkflowViewState.IdRef="Switch`1_5">
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+    <Switch x:TypeArguments="x:Int32" DisplayName="Switch (Select row 2 main rune)" Expression="[in_RuneData.primaryArray(2)]" sap:VirtualizedContainerService.HintSize="1039,334" sap2010:WorkflowViewState.IdRef="Switch`1_5">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 2 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="30" OffsetY="245" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -208,7 +202,7 @@
           </ui:Target>
         </ui:ClickImage.Target>
       </ui:ClickImage>
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 2 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="98" OffsetY="245" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -226,7 +220,7 @@
           </ui:Target>
         </ui:ClickImage.Target>
       </ui:ClickImage>
-      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 2 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+      <ui:ClickImage ContinueOnError="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 2 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
         <ui:ClickImage.CursorPosition>
           <ui:CursorPosition OffsetX="165" OffsetY="245" Position="BottomLeft" />
         </ui:ClickImage.CursorPosition>
@@ -245,7 +239,7 @@
         </ui:ClickImage.Target>
       </ui:ClickImage>
     </Switch>
-    <ui:HoverImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" KeyModifiers="{x:Null}" SendWindowMessages="{x:Null}" DisplayName="Hover trash can (to get rid of tooltip)" sap:VirtualizedContainerService.HintSize="1039,106" sap2010:WorkflowViewState.IdRef="HoverImage_3">
+    <ui:HoverImage ContinueOnError="{x:Null}" KeyModifiers="{x:Null}" SendWindowMessages="{x:Null}" DelayBefore="5" DelayMS="5" DisplayName="Hover trash can (to get rid of tooltip)" sap:VirtualizedContainerService.HintSize="1039,106" sap2010:WorkflowViewState.IdRef="HoverImage_3">
       <ui:HoverImage.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -260,20 +254,17 @@
         <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAkCAYAAAAHKVPcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATnSURBVFhH3ZbbUxNnGIf9I1q12ARyIJs9JNmcCAkEBQqCKYcaQIIc2loRAg6nFpBWlBkjIxYGmNYBW6ziBRfUwbEy44zaaS86w03/pl+/d8Mmm2RJBPGmF89s3m/f7/09ye4mOeE28chGLrHnxWXkDkexjVGq4GQ4iJI0TMLOgjORS7i86AblI0tCMlogFZv3sZAEx4IzkUtseaDBbKhemC4kkC2hCiQ5ggSR+clkkwzVkhQ4Zon8aEOz+f9IdFSXITHUiM1EO3Yf9GBv66rC9mJMWaNzn5e7dQWI95IYbA1gd6UZe5tRRlvB4+5KEwZayo5HoqlcxPadCuxtVGPv12q8WApjdjCAhjo3qsIyjHaHQlWVrKzRuReL4VT/dqICNS723XJUiY4qEa+Xg/hnvRI7C+XovuhJhRaCencW2N61CrxeCaG3Tjy8RHtYwF8/h/A3Y3HcD7tTPywftIf2qnOilcK7S0T8PP5YCODtahC34z7dgMMwx2a8YbNesplnJRtEgwmicR/2Wlfi0Q0fXi2VY/ZaWoCTPbC7vQqCx4d7dwbx6lkiBdW0rvZQv1Zk/npy5gabXVDiSqOEl/cDeDzrB6e5BD8tjuLJ+nSKt8/n8e+fKymo1p6nfq0EzaKZNLuvns8v8XjGh535MrRF0nc+8SYrtBDUr91PRNnM52z2oxnvwRKtIYE9jn6sT3tzBsTjnRgb6UkxPtqdt6b+7BnEGpv9O8uodZfqS0x0OLB124d4zKU74DiIx2SW4cVYu6gvcbdfxtObXvYllLu51Cnju4k+LC+MoLOrWVkbuHZJqelINa1TTX3Ur92vQrMpI3HVqS+xfN2F32Y8cHhyN9PdvsluOLre3473KmtL88NKTUeqaZ1q6st+OlTKAg729Llxb4BJMAHRwL4nPGb6S5eU+GXSjYeT+u+Ahj5Zm1JCJsaSEj/uS9CRalqnmvoOkiDUHBLIkXgw7sKDiQ8voeaIBotChsRddp1WR5yQZCln43FJeH0Sy3DhVh+7MfUkJjtFLA07ESz/cBLBoITFIYeSlZKgcPVX80qDwG4YCV2RQhI9ytr9xJBS05FqWi8k0RURsTDgwJfnOX2JOreNPToiprqFnM1aifXVCQzHY9ja+F6p6Ug1rReSmOoRkPhGRKVo1ZcgpmI85r4WURMWMzaXOt1YW06GFIL6qF+7n6gJS5j7SsBkF/vt2BfQlWgKcPihh8foJTssQvqyFPNOtFxswLOntzJ+PbOh89RH/VoBmjXSYcfNXh6NfvaVnZKw4gQFq3+9VOKtHKa77Oi+wGcMeh8uN/K4cdmOwWa6F+hSpNGV8FstGPrCipGoFa21dt2hh6G1hsNIG705C7wWCqZPIo2uhMNoRQVvQX+zCf1NJrRUW2Hmc5+YQtCelnPW1ByfzQqBhRLvJEEEOTNinxnQXW9AtNYIn9emG6YH9UZrjOg+b0BnrQFB0QzeWAr+sBKEz2pCJHgG0XOfMIoQCRehwm+C4OTASelLRa9pjc5Fwpr+UBGc5n2Bo0oQdBcHOCPqyk7iQugkGoMfFzzWl52C325gwRaGNb9EtsBBEiqyuRgh6QzOyqdR7TmF+sBHCvS6yn0aQXbOyXqS4SrHLEFIbE1FJIozyRTYl2CPIiEo6Ehkh0qfsiCVLAE9hEPBRBVUiVL8B7ck30el2HArAAAAAElFTkSuQmCC" />
       </ui:HoverImage.Image>
       <ui:HoverImage.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='leagueclientux.exe' cls='RCLIENT' title='League of Legends' /&gt;" TimeoutMS="5">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>
         </ui:Target>
       </ui:HoverImage.Target>
     </ui:HoverImage>
-    <If Condition="[treesWithExtraRowThreeRune.Contains(in_RuneData.primaryTree)]" DisplayName="If (Select row 3 main rune)" sap:VirtualizedContainerService.HintSize="1039,352" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[treesWithExtraRowThreeRune.Contains(in_RuneData.primaryTree)]" DisplayName="If (Select row 3 main rune)" sap:VirtualizedContainerService.HintSize="1039,504" sap2010:WorkflowViewState.IdRef="If_2">
       <If.Then>
-        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_RuneData.primaryArray(3)]" sap:VirtualizedContainerService.HintSize="497,204" sap2010:WorkflowViewState.IdRef="Switch`1_7">
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_RuneData.primaryArray(3)]" sap:VirtualizedContainerService.HintSize="497,356" sap2010:WorkflowViewState.IdRef="Switch`1_7">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="25" OffsetY="330" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -291,7 +282,7 @@
               </ui:Target>
             </ui:ClickImage.Target>
           </ui:ClickImage>
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="75" OffsetY="330" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -309,7 +300,7 @@
               </ui:Target>
             </ui:ClickImage.Target>
           </ui:ClickImage>
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="125" OffsetY="330" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -327,7 +318,7 @@
               </ui:Target>
             </ui:ClickImage.Target>
           </ui:ClickImage>
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="4" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_14" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="4" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_14" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="175" OffsetY="330" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -348,8 +339,8 @@
         </Switch>
       </If.Then>
       <If.Else>
-        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_RuneData.primaryArray(3)]" sap:VirtualizedContainerService.HintSize="497,182" sap2010:WorkflowViewState.IdRef="Switch`1_6">
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[in_RuneData.primaryArray(3)]" sap:VirtualizedContainerService.HintSize="497,334" sap2010:WorkflowViewState.IdRef="Switch`1_6">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="1" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 1" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="30" OffsetY="330" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -367,7 +358,7 @@
               </ui:Target>
             </ui:ClickImage.Target>
           </ui:ClickImage>
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="2" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="98" OffsetY="330" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
@@ -385,7 +376,7 @@
               </ui:Target>
             </ui:ClickImage.Target>
           </ui:ClickImage>
-          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DisplayName="Click Image row 3 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+          <ui:ClickImage ContinueOnError="{x:Null}" x:Key="3" ClickType="CLICK_SINGLE" DelayBefore="50" DelayMS="50" DisplayName="Click Image row 3 pos 3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
             <ui:ClickImage.CursorPosition>
               <ui:CursorPosition OffsetX="165" OffsetY="330" Position="BottomLeft" />
             </ui:ClickImage.CursorPosition>
