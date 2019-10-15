@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.1": {
-      "ActivitiesChampRunepageMapping/1.0.2": {
+      "ActivitiesChampRunepageMapping/1.0.3": {
         "type": "package",
         "compile": {
           "lib/_._": {}
@@ -110,6 +110,16 @@
           "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
             "locale": "zh-Hans"
           }
+        }
+      },
+      "Fluent.Ribbon/3.5.1.198": {
+        "type": "package",
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Fluent.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
         }
       },
       "Humanizer.Core/2.4.2": {
@@ -501,6 +511,113 @@
           }
         }
       },
+      "UiPath.Terminal.Activities/1.3.3": {
+        "type": "package",
+        "dependencies": {
+          "Fluent.Ribbon": "3.5.1.198"
+        },
+        "compile": {
+          "lib/net452/_._": {}
+        },
+        "runtime": {
+          "lib/net452/NLog.dll": {},
+          "lib/net452/Open3270.dll": {},
+          "lib/net452/UiPath.Terminal.Activities.Design.dll": {},
+          "lib/net452/UiPath.Terminal.Activities.dll": {},
+          "lib/net452/UiPath.Terminal.Attachmate.dll": {},
+          "lib/net452/UiPath.Terminal.AttachmateExtra.dll": {},
+          "lib/net452/UiPath.Terminal.BlueZone.dll": {},
+          "lib/net452/UiPath.Terminal.Host.exe": {},
+          "lib/net452/UiPath.Terminal.IBM.dll": {},
+          "lib/net452/UiPath.Terminal.dll": {}
+        },
+        "resource": {
+          "lib/net452/de/UiPath.Terminal.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net452/de/UiPath.Terminal.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net452/de/UiPath.Terminal.IBM.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net452/de/UiPath.Terminal.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net452/fr/UiPath.Terminal.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net452/fr/UiPath.Terminal.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net452/fr/UiPath.Terminal.IBM.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net452/fr/UiPath.Terminal.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net452/ja/UiPath.Terminal.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net452/ja/UiPath.Terminal.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net452/ja/UiPath.Terminal.IBM.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net452/ja/UiPath.Terminal.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net452/ko/UiPath.Terminal.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net452/ko/UiPath.Terminal.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net452/ko/UiPath.Terminal.IBM.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net452/ko/UiPath.Terminal.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net452/pt-BR/UiPath.Terminal.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net452/pt-BR/UiPath.Terminal.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net452/pt-BR/UiPath.Terminal.IBM.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net452/pt-BR/UiPath.Terminal.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net452/ru/UiPath.Terminal.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net452/ru/UiPath.Terminal.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net452/ru/UiPath.Terminal.IBM.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net452/ru/UiPath.Terminal.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net452/zh-CN/UiPath.Terminal.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net452/zh-CN/UiPath.Terminal.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net452/zh-CN/UiPath.Terminal.IBM.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net452/zh-CN/UiPath.Terminal.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
       "UiPath.UIAutomation.Activities/19.8.0-ce": {
         "type": "package",
         "dependencies": {
@@ -609,13 +726,13 @@
     }
   },
   "libraries": {
-    "ActivitiesChampRunepageMapping/1.0.2": {
-      "sha512": "HUwkox9OWWWyMMZpN4fHJhCGIP4ergP62u2LnzmslyJ1ifBieDOye28mq4ocMiGg1pH7pMghOm0IX3uzuMDP0w==",
+    "ActivitiesChampRunepageMapping/1.0.3": {
+      "sha512": "FdvXGLatqC2CdIHa8ouhosSG1UfyDjzliUhuAEueODTg2SukkZsN4ohbVvTjASnNZ++gOqQjfSuDSgOY+T9cxQ==",
       "type": "package",
-      "path": "activitieschamprunepagemapping/1.0.2",
+      "path": "activitieschamprunepagemapping/1.0.3",
       "files": [
         ".nupkg.metadata",
-        "activitieschamprunepagemapping.1.0.2.nupkg.sha512",
+        "activitieschamprunepagemapping.1.0.3.nupkg.sha512",
         "activitieschamprunepagemapping.nuspec",
         "lib/LolChampionRunePageMap.dll"
       ]
@@ -725,6 +842,26 @@
         "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
         "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
         "tools/install.ps1"
+      ]
+    },
+    "Fluent.Ribbon/3.5.1.198": {
+      "sha512": "Ix4NJKGVHqeI1PeF1PB6as5L7qRx2hyPiXg+iNJfjru33rRlAthWlyUTS4HJEajWPxCJfIaVWx5gPdBE7nVJlQ==",
+      "type": "package",
+      "path": "fluent.ribbon/3.5.1.198",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent.ribbon.3.5.1.198.nupkg.sha512",
+        "fluent.ribbon.nuspec",
+        "lib/net40/Fluent.XML",
+        "lib/net40/Fluent.dll",
+        "lib/net40/Fluent.pdb",
+        "lib/net40/Microsoft.Windows.Shell.dll",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net45/Fluent.XML",
+        "lib/net45/Fluent.dll",
+        "lib/net45/Fluent.pdb",
+        "lib/net45/System.Windows.Interactivity.dll"
       ]
     },
     "Humanizer.Core/2.4.2": {
@@ -1143,6 +1280,58 @@
         "uipath.system.activities.nuspec"
       ]
     },
+    "UiPath.Terminal.Activities/1.3.3": {
+      "sha512": "iU8KD/Kqqezf7K9F0g89Z50jLcSVqIxclVGp4a90xyGuYOa05tBphnKl1/EULD+Py29NlfgPsq/0V+h5/FFXog==",
+      "type": "package",
+      "path": "uipath.terminal.activities/1.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/NLog.config",
+        "lib/net452/NLog.dll",
+        "lib/net452/Open3270.dll",
+        "lib/net452/UiPath.Terminal.Activities.Design.dll",
+        "lib/net452/UiPath.Terminal.Activities.dll",
+        "lib/net452/UiPath.Terminal.Attachmate.dll",
+        "lib/net452/UiPath.Terminal.AttachmateExtra.dll",
+        "lib/net452/UiPath.Terminal.BlueZone.dll",
+        "lib/net452/UiPath.Terminal.Host.exe",
+        "lib/net452/UiPath.Terminal.Host.exe.config",
+        "lib/net452/UiPath.Terminal.IBM.dll",
+        "lib/net452/UiPath.Terminal.dll",
+        "lib/net452/UiPath.Terminal.dll.config",
+        "lib/net452/de/UiPath.Terminal.Activities.Design.resources.dll",
+        "lib/net452/de/UiPath.Terminal.Activities.resources.dll",
+        "lib/net452/de/UiPath.Terminal.IBM.resources.dll",
+        "lib/net452/de/UiPath.Terminal.resources.dll",
+        "lib/net452/fr/UiPath.Terminal.Activities.Design.resources.dll",
+        "lib/net452/fr/UiPath.Terminal.Activities.resources.dll",
+        "lib/net452/fr/UiPath.Terminal.IBM.resources.dll",
+        "lib/net452/fr/UiPath.Terminal.resources.dll",
+        "lib/net452/ja/UiPath.Terminal.Activities.Design.resources.dll",
+        "lib/net452/ja/UiPath.Terminal.Activities.resources.dll",
+        "lib/net452/ja/UiPath.Terminal.IBM.resources.dll",
+        "lib/net452/ja/UiPath.Terminal.resources.dll",
+        "lib/net452/ko/UiPath.Terminal.Activities.Design.resources.dll",
+        "lib/net452/ko/UiPath.Terminal.Activities.resources.dll",
+        "lib/net452/ko/UiPath.Terminal.IBM.resources.dll",
+        "lib/net452/ko/UiPath.Terminal.resources.dll",
+        "lib/net452/pt-BR/UiPath.Terminal.Activities.Design.resources.dll",
+        "lib/net452/pt-BR/UiPath.Terminal.Activities.resources.dll",
+        "lib/net452/pt-BR/UiPath.Terminal.IBM.resources.dll",
+        "lib/net452/pt-BR/UiPath.Terminal.resources.dll",
+        "lib/net452/ru/UiPath.Terminal.Activities.Design.resources.dll",
+        "lib/net452/ru/UiPath.Terminal.Activities.resources.dll",
+        "lib/net452/ru/UiPath.Terminal.IBM.resources.dll",
+        "lib/net452/ru/UiPath.Terminal.resources.dll",
+        "lib/net452/zh-CN/UiPath.Terminal.Activities.Design.resources.dll",
+        "lib/net452/zh-CN/UiPath.Terminal.Activities.resources.dll",
+        "lib/net452/zh-CN/UiPath.Terminal.IBM.resources.dll",
+        "lib/net452/zh-CN/UiPath.Terminal.resources.dll",
+        "uipath.terminal.activities.1.3.3.nupkg.sha512",
+        "uipath.terminal.activities.nuspec"
+      ]
+    },
     "UiPath.UIAutomation.Activities/19.8.0-ce": {
       "sha512": "fCkzXycPwjGiKpT0yIclwZVH7KiHjjJeiDXv6D0g9TMAVjfwQvWSgDGWTstDHoG6isGGV0mem6MsO9qPw1nhBQ==",
       "type": "package",
@@ -1309,10 +1498,11 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
-      "ActivitiesChampRunepageMapping >= 1.0.2 <= 1.0.2",
+      "ActivitiesChampRunepageMapping >= 1.0.3 <= 1.0.3",
       "UiPath.Excel.Activities >= 2.6.3 <= 2.6.3",
       "UiPath.Mail.Activities >= 1.6.0 <= 1.6.0",
       "UiPath.System.Activities >= 19.8.0 <= 19.8.0",
+      "UiPath.Terminal.Activities >= 1.3.3 <= 1.3.3",
       "UiPath.UIAutomation.Activities >= 19.8.0-ce <= 19.8.0-ce"
     ]
   },
@@ -1333,7 +1523,7 @@
           "ActivitiesChampRunepageMapping": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.0.2, 1.0.2]"
+            "version": "[1.0.3, 1.0.3]"
           },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
@@ -1349,6 +1539,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[19.8.0, 19.8.0]"
+          },
+          "UiPath.Terminal.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.3.3, 1.3.3]"
           },
           "UiPath.UIAutomation.Activities": {
             "include": "Runtime",
